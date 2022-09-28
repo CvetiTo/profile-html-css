@@ -1,0 +1,44 @@
+@import url("https://use.fontawesome.com/releases/v6.1.2/css/all.css");
+html {
+    font-family: "Roboto", sans-serif;
+    color: #9d8189;
+  }
+body{
+    padding: 2rem;
+    background-color: #ffe5d9;
+}
+h1{
+    text-transform: uppercase;
+    text-align: center;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.card{
+    width: 18rem;
+    display: inline-block;
+    background-color: #fff;
+    border: 0.4rem solid #d8e2dc;
+    border-radius: 8px;
+    padding: 1rem;
+    vertical-align: middle;
+    margin: 0.5rem; 
+}
+.card img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+li{
+    list-style-type: none;
+   text-align: center;
+   
+}
+a{
+cursor: pointer;
+   text-decoration: none; 
+   color: #9d8189; 
+   font-weight: 600;
+}
