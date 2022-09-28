@@ -49,6 +49,19 @@
     width: 50%;
   }
 }
+@media screen and (max-width: 667px) {
+  #about .about__img {
+    width: 40%;
+  }
+  #about .info .info__name {
+    font-size: 36px;
+    margin-top: 10px;
+  }
+  #about .info .info__btn--cta {
+    padding: 18px 44px; 
+    margin-bottom: 10px;
+  }
+}
 @media screen and (max-width: 640px) {
   #about {
     gap: 1rem;
@@ -65,9 +78,8 @@
     margin-top: 10px;
   }
   #about .info .info__btn--cta {
-    padding: 18px 44px; 
+    padding: 18px 42px; 
     margin-bottom: 10px;
-   
   }
 }
 
