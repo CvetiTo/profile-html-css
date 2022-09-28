@@ -21,13 +21,6 @@
   align-items: center;
 }
 
-#header .nav .logo-link {
-  width: 40px;
-  margin-right: 2rem;
-  display: flex;
-  align-items: center;
-}
-
 #header .nav-list {
   display: flex;
   justify-content: space-evenly;

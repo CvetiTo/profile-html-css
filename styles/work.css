@@ -45,6 +45,18 @@
   color: #dd1b16;
 }
 
+@media screen and (max-width: 640px) {
+  #work .work__title {
+    margin-bottom: 10px;
+  }
+  #work .projects {
+    gap: 10px;
+  }
+  #work .projects .projects__item {
+    padding: 12px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   #work {
     height: unset;
