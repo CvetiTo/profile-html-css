@@ -4,11 +4,13 @@ html {
     color: #9d8189;
   }
 body{
-    padding: 2rem;
     background-color: #ffe5d9;
 }
 h1{
     text-align: center;
+    letter-spacing: 5px;
+    color: #f4acb7;
+    text-shadow: 3px 3px 2px rgba(206,178,208,0.6);
 }
 .container{
     width: 100%;
