@@ -24,7 +24,7 @@
   color: #d8e2dc;
   border-radius: 8px;
   width: 20%;
-  padding: 12px;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,7 +59,7 @@
     gap: 10px;
   }
   #work .projects .projects__item {
-    padding: 12px;
+    padding: 10px;
   }
 }
 @media screen and (max-width: 640px) {
@@ -70,7 +70,7 @@
     gap: 10px;
   }
   #work .projects .projects__item {
-    padding: 12px;
+    padding: 10px;
   }
 }
 

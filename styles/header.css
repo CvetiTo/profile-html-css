@@ -36,17 +36,13 @@
 @media screen and (max-width: 550px) {
   #mobile-btn {
     display: block;
-    width: 40px;
+    color: #ffcad4;
     border: none;
     background-color: transparent;
-    padding: 0px;
+    padding: 0.5rem;
     cursor: pointer;
     display: flex;
     align-items: center;
-  }
-
-  #mobile-btn svg .cls-1 {
-    fill: #f4acb7;
   }
 
   #header .nav {
@@ -79,7 +75,12 @@
     background-color: #ffcad4;
   }
   #header .nav:hover .nav-list {display: block;}
-  #header .nav:hover #mobile-btn{background-color: #ffcad4;}
+  #header .nav:hover #mobile-btn{
+    background-color: #ffcad4;
+    color: #9d8189;
+    padding: 0.5rem;
+    border-radius: 4px;
+  }
   #header .nav-list .link {
     padding: 0.25rem;
     display: block;
