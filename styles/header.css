@@ -85,3 +85,8 @@
     display: block;
   }
 }
+@media screen and (max-height: 400px){
+  #header .nav{
+    height: 35px;
+  }
+}

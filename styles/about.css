@@ -38,7 +38,17 @@
   width: 40%;
   
 }
-
+@media screen and (max-height: 400px) {
+  #about{
+    margin-top: 40px;
+  }
+  #about .info .info__text {
+    margin-bottom: 10px;
+  }
+  #about .info .info__btn--cta{
+    padding: 16px 40px;
+  }
+}
 @media screen and (max-width: 768px) {
   #about {
     gap: 1rem;

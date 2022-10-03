@@ -9,6 +9,7 @@ body {
 }
 .footer {
   text-align: center;
+  margin-bottom: 10px;
 }
 .footer a {
   text-decoration: none;
@@ -19,4 +20,9 @@ body {
 }
 .footer i {
   color: black;
+}
+@media screen and (max-height: 600px){
+  .footer{
+    margin-top: 3.5rem; 
+  }
 }
