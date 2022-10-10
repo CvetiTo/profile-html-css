@@ -9,7 +9,7 @@ body{
 h1{
     text-align: center;
     letter-spacing: 5px;
-    color: #f4acb7;
+    color: #9d8189;
     text-shadow: 3px 3px 2px rgba(206,178,208,0.6);
 }
 .container{
@@ -21,7 +21,7 @@ h1{
     width: 18rem;
     display: inline-block;
     background-color: #fff;
-    border: 0.4rem solid #d8e2dc;
+    border: 0.1rem solid #c2cad2;
     border-radius: 8px;
     padding: 1rem;
     vertical-align: middle;

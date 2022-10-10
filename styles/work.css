@@ -2,7 +2,13 @@
   max-width: 1000px;
   width: 85%;
   margin: 0 auto;
-  height: calc((100vh - 70px) * 0.15);
+  height: calc((100vh - 100px) * 0.15);
+  background: linear-gradient(0deg, rgba(29, 63, 97, 0.3),
+      rgba(29, 63, 97, 0.2)),
+    url(https://cdn.pixabay.com/photo/2018/04/17/10/14/delegate-3327150__340.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  clip-path: polygon(0px 0px, 100% 14%, 100% 86%, 0px 100%);
 }
 
 #work .work__title {
@@ -19,9 +25,9 @@
 }
 
 #work .projects .projects__item {
-  border: 1px solid #ffcad4;
-  background-color: #9d8189;
-  color: #d8e2dc;
+  border: 0.1px solid #ffcad4;
+  background: linear-gradient(to left top, #ffe5d9 60%, #9d8189);
+  color: #c2cad2;
   border-radius: 8px;
   width: 20%;
   padding: 10px;
@@ -29,46 +35,63 @@
   justify-content: center;
   align-items: center;
 }
+
 #work i.fa-html5 {
   color: #e54c21;
 }
+
 #work i.fa-css3 {
   color: #264de4;
 }
+
 #work i.fa-js {
   color: #f7e018;
 }
+
 #work i.fa-react {
   color: #61dafb;
 }
+
 #work i.fa-angular {
   color: #dd1b16;
 }
-@media screen and (max-height: 400px){
-  #work{
+
+@media screen and (max-height: 400px) {
+  #work {
     margin-top: 10px;
     margin-bottom: 10px;
+    height: fit-content;
+  }
+  #work .projects .projects__item{
+    width: 12%;
+    padding: 5px;
   }
 }
+
 @media screen and (max-width: 667px) {
   #work .work__title {
     margin-top: 0px;
     margin-bottom: 10px;
   }
+
   #work .projects {
     gap: 10px;
   }
+
   #work .projects .projects__item {
     padding: 10px;
   }
 }
+
 @media screen and (max-width: 640px) {
   #work .work__title {
     margin-bottom: 10px;
   }
+
   #work .projects {
     gap: 10px;
   }
+
   #work .projects .projects__item {
     padding: 10px;
   }
@@ -89,6 +112,7 @@
   #work .projects .projects__item {
     width: calc((100% - 2rem) / 3);
   }
+
   #work .projects .projects__item img {
     width: 100%;
   }

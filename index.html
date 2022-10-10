@@ -14,10 +14,12 @@
 <body>
   <header id="header">
     <nav class="nav">
-      <button id="mobile-btn">
-        <i class="fa-solid fa-bars fa-2x"></i>
+      <button id="mobile-btn" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
       </button>
-      <ul class="nav-list" role="list">
+      <ul id="listDrop" role="list">
         <li class="nav-item"><a href="" class="link">Home</a></li>
         <li class="nav-item"><a href="projects.html" class="link">Projects</a></li>
         <li class="nav-item"><a href="certificate.html" class="link">Certificates</a></li>
@@ -37,7 +39,7 @@
         </p>
         <a class="info__btn--cta" href="projects.html">Let’s get started</a>
       </div>
-      
+
       <img class="about__img" src="./img/myself1.jpg" alt="Myself" />
     </section>
 
@@ -54,8 +56,23 @@
   </main>
   <!-- Footer -->
   <footer class="footer">
-    <p>Powered by <a href="https://github.com/CvetiTo">CvetiTo <i class="fa-brands fa-github"></i></a>  
+    <p>Powered by <a href="https://github.com/CvetiTo">CvetiTo <i class="fa-brands fa-github"></i></a>
       Copyright &copy; 2022</p>
   </footer>
+  <script>
+    function myFunction() {
+      let x = document.getElementById("mobile-btn");
+      x.classList.toggle("change");
+
+      let y = document.getElementById("listDrop");
+      if (y.style.display == "block") {
+        y.style.display = "none";
+      } else {
+        y.style.display = "block";
+      } 
+      window.onresize = function(){ location.reload(); }
+    }
+  </script>
 </body>
+
 </html>
