@@ -6,14 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/projects.css">
-    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="styles/style.css" />
     <title>Projects</title>
 </head>
 
 <body>
-    <header>
-        <h1></h1>
-    </header>
+    <header id="header">
+        <nav class="nav">
+          <button id="mobile-btn" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+          </button>
+          <ul id="listDrop" role="list">
+            <li class="nav-item"><a href="./index.html" class="link">Home</a></li>
+            <li class="nav-item"><a href="projects.html" class="link">Projects</a></li>
+            <li class="nav-item"><a href="certificate.html" class="link">Certificates</a></li>
+            <li class="nav-item"><a href="contacts.html" class="link">Contacts</a></li>
+          </ul>
+        </nav>
+      </header>
     <main class="projects">
         <section class="react">
             <img src="./img/react-masonry.jpg" alt="React app">
@@ -24,6 +36,10 @@
             <a href="https://github.com/CvetiTo/Angular-Progrct-ng13CarGo">ng13CarGo</a>
             <a href="https://github.com/CvetiTo/Angular-Progrct-ng13CarGo-rest-api">ng13CarGo-rest-api</a>
         </section>
+        <section class="html-css">
+            <img src="./img/html-css.jpg" alt="HTML-CSS app">
+            <a href="https://github.com/CvetiTo/profile-html-css">Profile-html-css</a>
+        </section>
     </main>
     <br>
         <li>Go to <i class="fa-solid fa-angles-right"></i> <a href="./index.html">Home</a></li>
@@ -33,6 +49,20 @@
         <p>Powered by <a href="https://github.com/CvetiTo">CvetiTo <i class="fa-brands fa-github"></i></a>
             Copyright &copy; 2022</p>
     </footer>
+    <script>
+        function myFunction() {
+          let x = document.getElementById("mobile-btn");
+          x.classList.toggle("change");
+    
+          let y = document.getElementById("listDrop");
+          if (y.style.display == "block") {
+            y.style.display = "none";
+          } else {
+            y.style.display = "block";
+          } 
+          window.onresize = function(){ location.reload(); }
+        }
+      </script>
 </body>
 
 </html>

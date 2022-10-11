@@ -34,6 +34,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+
+#work .projects .projects__item:hover {
+  transform: rotateY(26deg) rotateX(26deg);
+  box-shadow: -10px 10px 10px #aaa;
 }
 
 #work i.fa-html5 {
@@ -62,7 +69,8 @@
     margin-bottom: 10px;
     height: fit-content;
   }
-  #work .projects .projects__item{
+
+  #work .projects .projects__item {
     width: 12%;
     padding: 5px;
   }

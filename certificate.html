@@ -5,10 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/certificate.css">
-    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="styles/style.css" />
     <title>Certificates</title>
 </head>
 <body>
+    <header id="header">
+        <nav class="nav">
+          <button id="mobile-btn" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+          </button>
+          <ul id="listDrop" role="list">
+            <li class="nav-item"><a href="./index.html" class="link">Home</a></li>
+            <li class="nav-item"><a href="projects.html" class="link">Projects</a></li>
+            <li class="nav-item"><a href="certificate.html" class="link">Certificates</a></li>
+            <li class="nav-item"><a href="contacts.html" class="link">Contacts</a></li>
+          </ul>
+        </nav>
+      </header>
     <marquee behavior="alternate">
         <h1>Certificates</h1>
     </marquee>
@@ -43,5 +58,19 @@
         <p>Powered by <a href="https://github.com/CvetiTo">CvetiTo <i class="fa-brands fa-github"></i></a>  
           Copyright &copy; 2022</p>
       </footer>
+      <script>
+        function myFunction() {
+          let x = document.getElementById("mobile-btn");
+          x.classList.toggle("change");
+    
+          let y = document.getElementById("listDrop");
+          if (y.style.display == "block") {
+            y.style.display = "none";
+          } else {
+            y.style.display = "block";
+          } 
+          window.onresize = function(){ location.reload(); }
+        }
+      </script>
 </body>
 </html>
